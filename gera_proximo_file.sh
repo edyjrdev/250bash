@@ -6,7 +6,7 @@
 
 #nome do arquivo como parametro
 
-file=$1
+file="$1.sh"
 
 cp template.sh $file
 echo "Arquivo $file criado com sucesso"
