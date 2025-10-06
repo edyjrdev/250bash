@@ -14,4 +14,6 @@ calculate_sum(){
     echo "A soma dos números é: $sum"
 }
 
+# passa os parametros da execução para dentro da funçao
+# ./053.sh 1 2 3 4 5 99
 calculate_sum "$@"
