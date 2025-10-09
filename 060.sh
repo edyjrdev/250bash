@@ -23,3 +23,8 @@ awk -F';' '{print$1, $3}' $file_name
 
 # soma das idades
 awk -F';' '{total += $2} END {print "Vivencias:", total}' $file_name
+
+# maires de idade
+echo "Seminovo"
+awk -F';' '$2>40{print $0}' $file_name
+
