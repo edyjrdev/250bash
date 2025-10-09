@@ -4,7 +4,13 @@
 
 # Objetivo Redirecionar Erro 2>
 
-ls inexistente.txt 2> erro.log
-ls inexistente2.txt 2>> erro.log
+file_log='./files/erro.log'
+data_atual=$(date '+%Y%m%d%H%M%S')
 
-cat erro.log
+touch $file_log
+
+ls inexistente.txt 2> $file_log
+ls inexistente2.txt 2>> $file_log
+echo $data_atual >> $file_log
+
+cat $file_log

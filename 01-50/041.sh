@@ -5,7 +5,7 @@
 # Objetivo Tratando resultaoo execução
 
 # Causar Erro intencionalmente
-ls arquivo_inexistente.txt
+ls './files/arquivo_inexistente.txt'
 # ls: cannot access 'arquivo_inexistente.txt': No such file or directory
 
 # ne = 0 significa que o comando anterior foi executado com sucesso

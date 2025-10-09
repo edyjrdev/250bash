@@ -5,11 +5,12 @@
 # Objetivo Criar e Apagar arquivo
 
 #criar arquivo vazio
-file_name="arquivo_vazio.txt"
+file_name="./files/arquivo_vazio.txt"
 touch $file_name
 
 echo "Arquivo criado: $file_name"
- 
+
+sleep 10  
 #apagar arquivo
 rm $file_name
 echo "Arquivo apagado: $file_name" 

@@ -4,9 +4,9 @@
 
 # Objetivo verificar permissão de arquivo
 
-file="exemplo.txt"
+file="./files/exemplo.txt"
 
-# permissões no linux  rwx
+    # permissões no linux  rwx
 # -r verifica permissão de leitura
 # -w verifica permissão de escrita
 # -x verifica permissão de execução

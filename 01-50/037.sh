@@ -6,7 +6,7 @@
 
 data_atual=$(date +%Y-%m-%d_%H-%M-%S)
 
-pasta="temp-$data_atual"
+pasta="./files/temp-$data_atual"
 
 mkdir $pasta
 
@@ -15,6 +15,8 @@ if [ -d $pasta ]; then
 else
     echo "Falha ao criar a pasta $pasta."
 fi
+
+sleep 5
 
 # Remover pasta
 rmdir $pasta

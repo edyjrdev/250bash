@@ -8,7 +8,7 @@
 
 file="$1.sh"
 
-cp template.sh $file
+cp './files/template.sh' $file
 echo "Arquivo $file criado com sucesso"
 
 

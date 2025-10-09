@@ -4,8 +4,11 @@
 
 # Objetivo Redirecionar saída para arquivo
 # saida para arquivo
-echo "Edy Junior" > saida.txt
-# saida para apendendo arquivo
-echo "Curso de Bash" >> saida.txt
 
-cat saida.txt
+file_name='./files/saida.txt'
+
+echo "Edy Junior" > $file_name
+# saida para apendendo arquivo
+echo "Curso de Bash" >> $file_name
+
+cat $file_name

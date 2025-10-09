@@ -6,19 +6,20 @@
 
 
 #Criar Arquivo de Entrada
-touch arquivo.csv
-echo "Nome;Idade;Sexo" > arquivo.csv
-echo "Edy;47;Masculino" >> arquivo.csv
-echo "Laila;38;Feminino" >> arquivo.csv
-echo "Sara;4;Feminino" >> arquivo.csv
+file_name="./files/arquivo.csv" 
+touch $file_name
+echo "Nome;Idade;Sexo" > $file_name
+echo "Edy;47;Masculino" >> $file_name
+echo "Laila;38;Feminino" >> $file_name
+echo "Sara;4;Feminino" >> $file_name
 
 echo "Original"
-cat arquivo.csv
+cat $file_name
 
 
 #Pegar Colunas com awd
 echo "Colunas 1 e 3"
-awk -F';' '{print$1, $3}' arquivo.csv
+awk -F';' '{print$1, $3}' $file_name
 
 # soma das idades
-awk -F';' '{total += $2} END {print "Vivencias:", total}' arquivo.csv
+awk -F';' '{total += $2} END {print "Vivencias:", total}' $file_name

@@ -4,8 +4,7 @@
 
 # Objetivo Extraindo diretorio e arquivo
 
-diretorio="/home/edy/Documentos/Projetos/ShellScript/034.sh"
-
+diretorio=$0 #Script Executor
 echo "Arquivo: $(basename $diretorio)"
 echo "Pasta: $(dirname $diretorio)"
 
