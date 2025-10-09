@@ -2,13 +2,14 @@
 
 # Autor: Edy Junior
 
-# Objetivo Gerar copia do template recebeno novo nome do arquivo
+# Objetivo Copia do template recebendo novo nome do arquivo com permissão de execução.
 
 #nome do arquivo como parametro
 
 file="$1.sh"
 
-cp './files/template.sh' $file
+cp './files/template.sh' $file # template executavel
+
 echo "Arquivo $file criado com sucesso"
 
 
